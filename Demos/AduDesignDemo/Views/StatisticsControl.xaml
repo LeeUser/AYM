@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="AduDesignDemo.Views.StatisticsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:attached="clr-namespace:DMSkin.Attached;assembly=DMSkin"
+             xmlns:dmskin="clr-namespace:DMSkin;assembly=DMSkin"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AduDesignDemo.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="160">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Border Grid.Column="0" Grid.Row="0">
+            <TextBlock Text="统计数据" FontWeight="Normal" Foreground="#fff" FontSize="13" Padding="10"></TextBlock>
+        </Border>
+
+        <UniformGrid Rows="7" Grid.Column="0" Grid.Row="1">
+            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                <StackPanel>
+                    <TextBlock Text="总运输量" FontSize="12" Foreground="#fff"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                </StackPanel>
+            </Border>
+            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                <StackPanel>
+                    <TextBlock Text="当日运输货物" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                </StackPanel>
+            </Border>
+            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                <StackPanel>
+                    <TextBlock Text="入口母托盘数" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                </StackPanel>
+            </Border>
+            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                <StackPanel>
+                    <TextBlock Text="入口子托盘数" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                </StackPanel>
+            </Border>
+            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                <StackPanel>
+                    <TextBlock Text="异常口出货" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                </StackPanel>
+            </Border>
+            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                <StackPanel>
+                    <TextBlock Text="出口出货数" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                </StackPanel>
+            </Border>
+        </UniformGrid>
+    </Grid>
+</UserControl>
