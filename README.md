@@ -2,7 +2,7 @@
 #### 介绍
 #### 内容：MVVM 框架模块 + DesignLibrary 控件样式库
 
-<img src="Demo.png" align="center">
+<img src="https://raw.githubusercontent.com/LeeUser/AYM/master/Demo.png" align="center">
 
 ## 1.开发&编译&环境&问题
 
@@ -30,7 +30,7 @@
 | DMSkin.AduDesign  | Adu为DMSkin设计的样式库          | 1.0.0.1000     |        |
 
 #### 2.1 新手使用说明
-<img src="https://raw.githubusercontent.com/944095635/DMSkin/master/Docs/Image/Framework1.png" align="center">
+<img src="https://raw.githubusercontent.com/LeeUser/AYM/master/Docs/Image/Framework1.png" align="center">
 
 ````xml
 使用DMSkin.dll 和 DMSkin.Core.dll,窗口继承自DMSkinWindow
@@ -42,7 +42,7 @@
 ````
 
 #### 2.2 进阶使用说明
-<img src="https://raw.githubusercontent.com/944095635/DMSkin/master/Docs/Image/Framework2.png" align="center">
+<img src="https://raw.githubusercontent.com/LeeUser/AYM/master/Docs/Image/Framework2.png" align="center">
 
 ````xml
 仅用DMSkin.dll 和 DMSkin.Core.dll
