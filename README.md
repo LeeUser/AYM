@@ -8,10 +8,9 @@
 
 <img src="https://raw.githubusercontent.com/LeeUser/AYM/master/Docs/Image/VS.png" width="310" height="101" align="center">
 
-````xml
 开发环境：Windows 10  +  Visual Studio 2019 Professional  +  .Net Framework 4.5
 
-项目基于Visual Studio 2019 Professional .Net Framework 4.5，源码包括一些C#新语法。
+项目基于Visual Studio 2017 Professional .Net Framework 4.5，源码包括一些C#新语法。
 
 如果你在旧版本Visual Studio版本上编译不通过的话，请自行修改中源码不兼容的部分。
 ````
@@ -29,10 +28,6 @@
 | DMSkin.CyanDesign | CyanDesign 青 "轻"              | 1.0.0.1000     |        |
 | DMSkin.AduDesign  | Adu为DMSkin设计的样式库          | 1.0.0.1000     |        |
 
-#### 2.1 新手使用说明
-<img src="https://raw.githubusercontent.com/LeeUser/AYM/master/Docs/Image/Framework1.png" align="center">
-
-````xml
 使用DMSkin.dll 和 DMSkin.Core.dll,窗口继承自DMSkinWindow
 从DesignLibrary样式库中选择一个来作为软件的样式库。
 非常推荐刚接触WPF,不会自己写样式和模板的开发者使用这种方式。
@@ -40,11 +35,6 @@
 这种模式,你只需要使用原生组件,通过设置Style Key就可以切换风格。
 通过重写覆盖样式库中的颜色Key实现整体换色(如果目标库有主题色)
 ````
-
-#### 2.2 进阶使用说明
-<img src="https://raw.githubusercontent.com/LeeUser/AYM/master/Docs/Image/Framework2.png" align="center">
-
-````xml
 仅用DMSkin.dll 和 DMSkin.Core.dll
 非常推荐会写样式模板的开发者使用这种方式。
 
