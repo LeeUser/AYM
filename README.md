@@ -1,11 +1,8 @@
-# DMSkin
-## 目前可以使用,但是内容较少,持续更新中
+# AYM客户端
 #### 介绍
-#### 这是一个全新的项目，快速开发WPF客户端的框架。
 #### 内容：MVVM 框架模块 + DesignLibrary 控件样式库
-#### 开发PC客户端 一套搞定
 
-<img src="https://raw.githubusercontent.com/944095635/DMSkin/master/Docs/Image/Demo2.png" align="center">
+<img src="Demo.png" align="center">
 
 ## 1.开发&编译&环境&问题
 
@@ -20,23 +17,6 @@
 ````
 ````xml
 支持环境：Windows 7/10 +  .Net Framework 4.5
-````
-````xml
-1.目前绝对放弃Windows XP
-2.WPF多数是企业软件,如果要适配windows 7,单独装.Net Framework 4.5的库
-3.UI库的初衷就是为了制作更精美的界面,精美的效果在旧系统中并不能正常的显示,
-  为了适配旧版本的系统而放弃语言新特性,得不偿失。
-
-目前Windows 10 占有率已经超过Windows 7
-````
-````xml
-注意：系统阴影(如果用户关闭了窗口阴影,界面边界无法分辨，可以考虑使用Border增加窗口边框)
-我的电脑->此电脑->高级系统设置->性能->设置->√ 在窗口下显示阴影
-````
-````xml
-Windows XP 请自行测试,
-旧版本已经被我转移到[DMSkin-for-WPF](https://github.com/944095635/DMSkin-for-WPF)(备份学习之用)
-````
 ## 2.项目模块&使用说明
 
 | 项目               |   DMSkin.dll 和 DMSkin.Core.dll 可以独立存在   | 最新版本            | Nuget  |
