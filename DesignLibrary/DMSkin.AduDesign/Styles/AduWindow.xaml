@@ -41,8 +41,8 @@
     </Style>
 
     <Style x:Key="AduWindowStyle" TargetType="{x:Type dmskin:DMSkinWindow}">
-        <Setter Property="SystemButtonOverColor" Value="#20000000" />
-        <Setter Property="SystemButtonCloseOverColor" Value="#20000000" />
+        <Setter Property="SystemButtonOverColor" Value="#00465B" />
+        <Setter Property="SystemButtonCloseOverColor" Value="#00465B" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type dmskin:DMSkinWindow}">

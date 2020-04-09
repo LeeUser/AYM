@@ -4,9 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AduDesignDemo.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="107" d:DesignWidth="395">
-    <Grid>
+             mc:Ignorable="d"
+             >
+    <Grid
+        Margin="10,5"
+        >
+        
         <Grid.ColumnDefinitions>
 
             <ColumnDefinition Width="145*"/>
@@ -15,42 +18,45 @@
 
             <ColumnDefinition Width="125*"/>
 
+            <ColumnDefinition/>
+
         </Grid.ColumnDefinitions>
 
         <Path Data="m36.06555,213.11475c0,0 125.2459,-126.22951 125.2459,-126.22951c0,0 47.86885,0 47.541,0c0.32786,0 0.32786,126.5578 0,126.55737c0,0.00001 -31.47713,0.00001 -31.80328,0c0.32615,0 0.32786,-33.77679 0,-34.09836c0,0.32628 -42.95209,0.32788 -43.27869,0c0.32785,0 25.24589,-25.57376 25.24589,-25.57376c0,0 18.03279,0.98361 18.03279,0.98361c0,0 0,-39.34426 0,-39.34426c0,0 -97.37705,98.36066 -97.37705,98.36066c0,0 -43.60656,-0.65574 -43.60656,-0.65574z"
 
-     Fill="White" Stretch="Fill" StrokeThickness="1.5" Margin="2,0,2,0" >
+     Fill="#BFD734" Stretch="Fill" StrokeThickness="1.5" Margin="2,0,2,0" >
 
-            <Path.Effect>
+            <!--<Path.Effect>
 
                 <DropShadowEffect Opacity="1" ShadowDepth="0" BlurRadius="10" Direction="10" Color="{Binding ElementName=MainWindow,Path=Foreground.Color}"></DropShadowEffect>
 
-            </Path.Effect>
+            </Path.Effect>-->
 
         </Path>
 
         <Path Data="m217.04916,86.88525c0,0 33.77049,0.32787 33.77049,0.32787c0,0 38.03279,50.4918 38.03279,50.4918c0,0 38.36066,-50.4918 38.36066,-50.4918c0,0 33.11475,0 32.78689,0c0.32786,0 -55.73771,73.44263 -55.73771,73.44263c0,0 0.32787,52.78689 0.32787,52.78689c0,0 -31.80497,0 -32.13114,-0.00001c0.32617,0.00001 0.65573,-53.11475 0.65573,-53.11475c0,0 -56.06557,-73.44262 -56.06557,-73.44262z"
 
-     Fill="White" Stretch="Fill" StrokeThickness="1.5" Margin="2,0,2,0" Grid.Column="1" >
+     Fill="#244296" Stretch="Fill" StrokeThickness="1.5" Margin="2,0,2,0" Grid.Column="1" >
 
-            <Path.Effect>
+            <!--<Path.Effect>
 
                 <DropShadowEffect Opacity="1" ShadowDepth="0" BlurRadius="10" Direction="10" Color="{Binding ElementName=MainWindow,Path=Foreground.Color}"></DropShadowEffect>
 
-            </Path.Effect>
+            </Path.Effect>-->
 
         </Path>
 
         <Path Data="m368.52457,87.21311c0,0 44.91803,0 44.91803,0c0,0 24.2623,81.31148 23.93443,81.31147c0.32787,0.00001 24.59016,-81.31147 24.59016,-81.31147c0,0 44.59017,-0.32786 44.59017,-0.32786c0,0 0.32787,126.55737 0.32787,126.55737c0,0 -27.21312,0.65574 -27.21312,0.65574c0,0 -0.65574,-100.32787 -0.65574,-100.32787c0,0 -29.83606,100 -29.83606,100c0,0 -22.29749,0 -22.62295,-0.00001c0.32546,0.00001 -31.47541,-98.03278 -31.47541,-98.03278c0,0 0.32787,98.03279 0.32787,98.03279c0,0 -26.89325,0 -27.21311,-0.00001c0.31986,0.00001 0.32786,-126.55737 0.32786,-126.55737z"
 
-     Fill="White" Stretch="Fill" StrokeThickness="1.5" Margin="2,0,2,0" Grid.Column="2" >
+     Fill="#244295" Stretch="Fill" StrokeThickness="1.5" Margin="2,0,2,0" Grid.Column="2" >
 
-            <Path.Effect>
+            <!--<Path.Effect>
 
                 <DropShadowEffect Opacity="1" ShadowDepth="0" BlurRadius="10" Direction="10" Color="{Binding ElementName=MainWindow,Path=Foreground.Color}"></DropShadowEffect>
 
-            </Path.Effect>
+            </Path.Effect>-->
 
         </Path>
+
     </Grid>
 </UserControl>

@@ -1,11 +1,3 @@
-## 如果你有XAML相关的外包需求，可以通过QQ或微信与我取得联系。(QQ:"944095635" 微信号:"qq944095635")
-
-
-## 基于DMSkin开发的PC项目，现在运营中你可以前往Steam下载体验。
-[Wallpaper Maker](https://store.steampowered.com/app/1010800)
-<img src="https://raw.githubusercontent.com/944095635/DMSkin/master/Docs/Image/wall.jpg" align="center">
-
-
 # DMSkin
 ## 目前可以使用,但是内容较少,持续更新中
 #### 介绍
@@ -13,7 +5,6 @@
 #### 内容：MVVM 框架模块 + DesignLibrary 控件样式库
 #### 开发PC客户端 一套搞定
 
-<img src="https://raw.githubusercontent.com/944095635/DMSkin/master/Docs/Image/Demo1.png" align="center">
 <img src="https://raw.githubusercontent.com/944095635/DMSkin/master/Docs/Image/Demo2.png" align="center">
 
 ## 1.开发&编译&环境&问题

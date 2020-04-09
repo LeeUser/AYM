@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4C3340C-A5E8-4324-B512-AE8C10C00E14}</ProjectGuid>
+    <ProjectGuid>{57B60DA8-75ED-42D7-B205-85D24DF8BE6F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CyanDesignDemo</RootNamespace>
-    <AssemblyName>CyanDesignDemo</AssemblyName>
+    <RootNamespace>AduDesignDemo</RootNamespace>
+    <AssemblyName>AduDesignDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -33,6 +33,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -54,6 +58,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\DMCode.cs" />
+    <Compile Include="ViewModel\AduDesignViewModel.cs" />
+    <Compile Include="Views\aymlogo.xaml.cs">
+      <DependentUpon>aymlogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BagInfoControl.xaml.cs">
+      <DependentUpon>BagInfoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OutputControl.xaml.cs">
+      <DependentUpon>OutputControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Entry1Control.xaml.cs">
+      <DependentUpon>Entry1Control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StatisticsControl.xaml.cs">
+      <DependentUpon>StatisticsControl.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -66,6 +87,30 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Style\SIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\aymlogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BagInfoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OutputControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Entry1Control.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StatisticsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -94,14 +139,37 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DesignLibrary\DMSkin.CyanDesign\DMSkin.CyanDesign.csproj">
-      <Project>{4b0ef37d-e012-4153-84b9-76fce8c84301}</Project>
-      <Name>DMSkin.CyanDesign</Name>
+    <ProjectReference Include="..\..\DesignLibrary\DMSkin.AduDesign\DMSkin.AduDesign.csproj">
+      <Project>{e55f4d48-0893-4db1-84dc-0844ce3f957b}</Project>
+      <Name>DMSkin.AduDesign</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DMSkin.Core\DMSkin.Core.csproj">
+      <Project>{C11FCCC3-4A44-42A1-829B-57E8C146EC89}</Project>
+      <Name>DMSkin.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DMSkin\DMSkin.csproj">
       <Project>{84d6e067-2db0-4765-8f5c-5b5288a26f0a}</Project>
       <Name>DMSkin</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Output.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Leftback.jpg" />
+    <Resource Include="Views\Exits.png" />
+    <Resource Include="Views\Entry1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="About.png" />
+    <Resource Include="Exit.png" />
+    <Resource Include="Moniter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

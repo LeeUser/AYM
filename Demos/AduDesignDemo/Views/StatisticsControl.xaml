@@ -8,7 +8,10 @@
              xmlns:local="clr-namespace:AduDesignDemo.Views"
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="160">
-    <Grid>
+    <Grid
+        Background="#00465B"
+        Opacity="0.9"
+        >
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
@@ -18,44 +21,44 @@
         </Grid.RowDefinitions>
         
         <Border Grid.Column="0" Grid.Row="0">
-            <TextBlock Text="统计数据" FontWeight="Normal" Foreground="#fff" FontSize="13" Padding="10"></TextBlock>
+            <TextBlock Text="统计数据" FontWeight="Bold" Foreground="#FCC917" FontSize="13" Padding="10"></TextBlock>
         </Border>
 
         <UniformGrid Rows="7" Grid.Column="0" Grid.Row="1">
-            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+            <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                 <StackPanel>
-                    <TextBlock Text="总运输量" FontSize="12" Foreground="#fff"></TextBlock>
-                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock Text="总运输量" FontSize="12" FontWeight="Bold" Foreground="#0F718E"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#0F718E" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
                 </StackPanel>
             </Border>
-            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+            <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                 <StackPanel>
-                    <TextBlock Text="当日运输货物" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
-                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock Text="当日运输货物" FontSize="12" FontWeight="Bold" Foreground="#0F718E" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#0F718E" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
                 </StackPanel>
             </Border>
-            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+            <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                 <StackPanel>
-                    <TextBlock Text="入口母托盘数" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
-                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock Text="入口母托盘数" FontSize="12" FontWeight="Bold" Foreground="#0F718E" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#0F718E" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
                 </StackPanel>
             </Border>
-            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+            <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                 <StackPanel>
-                    <TextBlock Text="入口子托盘数" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
-                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock Text="入口子托盘数" FontSize="12" FontWeight="Bold" Foreground="#0F718E" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#0F718E" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
                 </StackPanel>
             </Border>
-            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+            <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                 <StackPanel>
-                    <TextBlock Text="异常口出货" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
-                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock Text="异常口出货" FontSize="12" FontWeight="Bold" Foreground="#0F718E" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#0F718E" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
                 </StackPanel>
             </Border>
-            <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+            <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                 <StackPanel>
-                    <TextBlock Text="出口出货数" FontSize="12" Foreground="#fff" Margin="0,0,0,20"></TextBlock>
-                    <TextBlock Text="10000" FontSize="14"  Foreground="#fff" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock Text="出口出货数" FontSize="12" FontWeight="Bold" Foreground="#0F718E" Margin="0,0,0,20"></TextBlock>
+                    <TextBlock Text="10000" FontSize="14"  Foreground="#0F718E" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
                 </StackPanel>
             </Border>
         </UniformGrid>

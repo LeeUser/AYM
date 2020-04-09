@@ -7,65 +7,67 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AduDesignDemo.Views"
              mc:Ignorable="d" 
+             Background="#00465B"
+             Opacity="0.9"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <ScrollViewer Style="{StaticResource DMScrollViewer}" HorizontalScrollBarVisibility="Disabled" Padding="10">
             <StackPanel>
-                <TextBlock Text="系统状态" FontSize="12" Margin="5,1" Foreground="#fff"></TextBlock>
+                <TextBlock Text="系统状态" FontSize="12" Margin="5,1" FontWeight="Bold" Foreground="#FCC917"></TextBlock>
                 <Border Margin="0,0,0,0">
                     <UniformGrid Columns="4">
-                        <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                        <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                             <StackPanel>
-                                <TextBlock Text="本地数据库" FontSize="18" FontWeight="Bold" Foreground="#fff"></TextBlock>
+                                <TextBlock Text="本地数据库" FontSize="18" FontWeight="Bold" Foreground="#000"></TextBlock>
                                 <!--<TextBlock Text="New Users" Margin="0,5" FontSize="12"  Foreground="#fff"></TextBlock>-->
                                 <ProgressBar Style="{StaticResource AduProgressBar}"
                                                             Margin="0,5"
-                                                            Background="#4DB9A7"
+                                                            Background="#00C4B5"
                                                             Maximum="50"
                                                             Value="20" />
-                                <TextBlock Text="正常" FontSize="10"  Foreground="#fff"></TextBlock>
+                                <TextBlock Text="正常" FontSize="10"  Foreground="#000"></TextBlock>
                             </StackPanel>
                         </Border>
-                        <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                        <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                             <StackPanel>
-                                <TextBlock Text="PLC通讯" FontSize="18" FontWeight="Bold" Foreground="#fff"></TextBlock>
+                                <TextBlock Text="PLC通讯" FontSize="18" FontWeight="Bold" Foreground="#000"></TextBlock>
                                 <!--<TextBlock Text="Product Sales" Margin="0,5" FontSize="12"  Foreground="#fff"></TextBlock>-->
                                 <ProgressBar Style="{StaticResource AduProgressBar}"
                                                             Margin="0,5"
                                                             Background="#DB5D5D"
                                                             Maximum="50"
                                                             Value="30" />
-                                <TextBlock Text="断开" FontSize="10"  Foreground="#fff"></TextBlock>
+                                <TextBlock Text="断开" FontSize="10"  Foreground="#000"></TextBlock>
                             </StackPanel>
                         </Border>
-                        <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                        <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                             <StackPanel>
-                                <TextBlock Text="WMS状态" FontSize="18" FontWeight="Bold" Foreground="#fff"></TextBlock>
+                                <TextBlock Text="WMS状态" FontSize="18" FontWeight="Bold" Foreground="#000"></TextBlock>
                                 <!--<TextBlock Text="Delivery Process" Margin="0,5" FontSize="12"  Foreground="#fff"></TextBlock>-->
                                 <ProgressBar Style="{StaticResource AduProgressBar}"
                                                             Margin="0,5"
-                                                            Background="#4DB9A7"
+                                                            Background="#00C4B5"
                                                             Maximum="50"
                                                             Value="40" />
-                                <TextBlock Text="正常" FontSize="10"  Foreground="#fff"></TextBlock>
+                                <TextBlock Text="正常" FontSize="10"  Foreground="#000"></TextBlock>
                             </StackPanel>
                         </Border>
-                        <Border Background="#20ffffff" CornerRadius="4" Padding="10" Margin="6">
+                        <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                             <StackPanel>
-                                <TextBlock Text="MDA状态" FontSize="18" FontWeight="Bold" Foreground="#fff"></TextBlock>
+                                <TextBlock Text="MDA状态" FontSize="18" FontWeight="Bold" Foreground="#000"></TextBlock>
                                 <!--<TextBlock Text="New Users" Margin="0,5" FontSize="12"  Foreground="#fff"></TextBlock>-->
                                 <ProgressBar Style="{StaticResource AduProgressBar}"
                                                             Margin="0,5"
-                                                            Background="#4DB9A7"
+                                                            Background="#00C4B5"
                                                             Maximum="50"
                                                             Value="44" />
-                                <TextBlock Text="正常" FontSize="10"  Foreground="#fff"></TextBlock>
+                                <TextBlock Text="正常" FontSize="10"  Foreground="#000"></TextBlock>
                             </StackPanel>
                         </Border>
                     </UniformGrid>
                 </Border>
-                <TextBlock Text="系统提示信息" FontSize="12" Margin="5,1" Foreground="#fff"></TextBlock>
-                <Border Margin="6,6,6,6" Background="#20ffffff" CornerRadius="4"  Height="80" >
+                <TextBlock Text="系统提示信息" FontSize="12" Margin="5,1" FontWeight="Bold" Foreground="#FCC917"></TextBlock>
+                <Border Margin="6,6,6,6" Background="#E7E8E9" CornerRadius="4"  Height="80" >
                     <!--
                     <GroupBox Style="{StaticResource AduGroupBox}" Header="AduButton" FontWeight="Bold" Margin="0,10" FontSize="12" Foreground="#fff" BorderThickness="3,0,0,0" BorderBrush="#4ABDA7">
                         
@@ -81,9 +83,9 @@
                     </GroupBox>
                     -->
                 </Border>
-                <TextBlock Text="出口工作模式和状态" FontSize="12" Margin="5,1" Foreground="#fff"></TextBlock>
-                <Border Margin="6,6,6,6" Background="#20ffffff" CornerRadius="4"   >
-                    <Image Name="btnMenu" Source="Exits.png" Height="370" HorizontalAlignment="Left" MouseLeftButtonUp="BtnMenu_MouseLeftButtonUp"></Image>
+                <TextBlock Text="出口工作模式和状态" FontSize="12" Margin="5,1" FontWeight="Bold" Foreground="#FCC917"></TextBlock>
+                <Border Margin="6,6,6,6" Background="#E7E8E9" CornerRadius="4"   >
+                    <Image Name="btnMenu" Source="Entry1.png" Height="370" HorizontalAlignment="Left" MouseLeftButtonUp="BtnMenu_MouseLeftButtonUp"></Image>
                     <!--
                     <GroupBox Style="{StaticResource AduGroupBox}" Header="Contacts" FontWeight="Bold" Margin="0,10" FontSize="12" Foreground="#fff" BorderThickness="3,0,0,0" BorderBrush="#4ABDA7">
                         

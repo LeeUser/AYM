@@ -361,7 +361,8 @@
     </Style>
     <Style x:Key="DMScrollViewer" TargetType="ScrollViewer">
         <Setter Property="Background" Value="{StaticResource TransparentColor}" />
-        <Setter Property="attached:Mouse.BackColor" Value="#BBBBBB" />
+        <Setter Property="Foreground" Value="#E7E8E9"/>
+        <Setter Property="attached:Mouse.BackColor" Value="Transparent"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
         <Setter Property="HorizontalScrollBarVisibility" Value="Disabled" />

@@ -23,6 +23,10 @@ namespace AduDesignDemo.Views
         public Entry1Control()
         {
             InitializeComponent();
+            //ImageBrush ib = new ImageBrush();
+            //ib.ImageSource = new BitmapImage(new Uri("back.png", UriKind.RelativeOrAbsolute));
+            //ib.Opacity = 0.3;
+            //this.Background = ib;
         }
 
         private void BtnMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

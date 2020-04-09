@@ -9,7 +9,7 @@
         <Setter Property="attached:Icon.Geometry" Value="{x:Null}" />
         <Setter Property="Background" Value="White" />
         <Setter Property="BorderBrush" Value="#FF707070" />
-        <Setter Property="Foreground" Value="#CCC" />
+        <Setter Property="Foreground" Value="#5F9DAB" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Template">
             <Setter.Value>

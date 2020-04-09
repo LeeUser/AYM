@@ -1,7 +1,10 @@
 ﻿using AduDesignDemo.Model;
 using System.Collections.ObjectModel;
 using System.Windows;
-using AduDesignDemo.Views;
+using System;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+
 
 namespace AduDesignDemo
 {
@@ -10,21 +13,15 @@ namespace AduDesignDemo
         public MainWindow()
         {
             InitializeComponent();
+            //ImageBrush ib = new ImageBrush();
+            //ib.ImageSource = new BitmapImage(new Uri("Background.jpg", UriKind.RelativeOrAbsolute));
+            //ib.Opacity = 0.3;
+            //this.Background = ib;
         }
 
         private void DMSkinWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            ObservableCollection<DMCode> CodeList = new ObservableCollection<DMCode> {
-                    new DMCode() {  CodeID=1,CodeName="AduSkin",Phone="1870921****",Email="1840921****@qq.com",Info="追求极致，永臻完美"}
-                    ,new DMCode() {  CodeID=1,CodeName="DMSkin",Phone="1840921****",Email="1840921****@qq.com",Info="梦机器"}
-                    ,new DMCode() {  CodeID=1,CodeName="AduSkin",Phone="1870921****",Email="1840921****@qq.com",Info="追求极致，永臻完美"}
-                    ,new DMCode() {  CodeID=1,CodeName="DMSkin",Phone="1840921****",Email="1840921****@qq.com",Info="梦机器"}
-                     ,new DMCode() {  CodeID=1,CodeName="AduSkin",Phone="1870921****",Email="1840921****@qq.com",Info="追求极致，永臻完美"}
-                    ,new DMCode() {  CodeID=1,CodeName="DMSkin",Phone="1840921****",Email="1840921****@qq.com",Info="梦机器"}
-                    ,new DMCode() {  CodeID=1,CodeName="AduSkin",Phone="1870921****",Email="1840921****@qq.com",Info="追求极致，永臻完美"}
-                    ,new DMCode() {  CodeID=1,CodeName="AduSkin",Phone="1870921****",Email="1840921****@qq.com",Info="追求极致，永臻完美"}
-                };
-            //AduDataGrids.ItemsSource = CodeList;
+            
         }
     }
 }
