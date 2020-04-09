@@ -8,13 +8,12 @@
 
 <img src="https://raw.githubusercontent.com/LeeUser/AYM/master/Docs/Image/VS.png" width="310" height="101" align="center">
 
-开发环境：Windows 10  +  Visual Studio 2019 Professional  +  .Net Framework 4.5
+开发环境：Windows 10  +  Visual Studio 2017 Professional  +  .Net Framework 4.5
 
 项目基于Visual Studio 2017 Professional .Net Framework 4.5，源码包括一些C#新语法。
 
 如果你在旧版本Visual Studio版本上编译不通过的话，请自行修改中源码不兼容的部分。
-````
-````xml
+
 支持环境：Windows 7/10 +  .Net Framework 4.5
 ## 2.项目模块&使用说明
 
