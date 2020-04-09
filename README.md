@@ -2,7 +2,7 @@
 #### 介绍
 #### 内容：MVVM 框架模块 + DesignLibrary 控件样式库
 
-<img src="https://github.com/LeeUser/AYM/blob/master/Demo.png" align="center">
+<img src="https://github.com/LeeUser/AYM/blob/master/Demo.PNG" align="center">
 
 ## 1.开发&编译&环境&问题
 
