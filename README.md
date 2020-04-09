@@ -6,7 +6,7 @@
 
 ## 1.开发&编译&环境&问题
 
-<img src="https://raw.githubusercontent.com/944095635/DMSkin/master/Docs/Image/VS.png" width="310" height="101" align="center">
+<img src="https://raw.githubusercontent.com/LeeUser/AYM/master/Docs/Image/VS.png" width="310" height="101" align="center">
 
 ````xml
 开发环境：Windows 10  +  Visual Studio 2019 Professional  +  .Net Framework 4.5
