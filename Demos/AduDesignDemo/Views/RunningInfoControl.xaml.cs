@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace AduDesignDemo.Views
 {
     /// <summary>
-    /// Interaction logic for aymlogo.xaml
+    /// Interaction logic for Entry1Control.xaml
     /// </summary>
-    public partial class Aymlogo : UserControl
+    public partial class RunningInfoControl : UserControl
     {
-        public Aymlogo()
+        public RunningInfoControl()
         {
             InitializeComponent();
         }

@@ -6,7 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AduDesignDemo.Views"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="400" d:DesignWidth="160">
     <Grid
         Background="#00465B"
@@ -21,14 +21,14 @@
         </Grid.RowDefinitions>
         
         <Border Grid.Column="0" Grid.Row="0">
-            <TextBlock Text="统计数据" FontWeight="Bold" Foreground="#FCC917" FontSize="13" Padding="10"></TextBlock>
+            <TextBlock Text="统计数据" FontWeight="Bold" Foreground="#FCC917" FontSize="12" Padding="10"></TextBlock>
         </Border>
 
         <UniformGrid Rows="7" Grid.Column="0" Grid.Row="1">
             <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">
                 <StackPanel>
                     <TextBlock Text="总运输量" FontSize="12" FontWeight="Bold" Foreground="#0F718E"></TextBlock>
-                    <TextBlock Text="10000" FontSize="14"  Foreground="#0F718E" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock x:Name="PacksTotal" Text="10000" FontSize="14"  Foreground="#0F718E" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
                 </StackPanel>
             </Border>
             <Border Background="#E7E8E9" CornerRadius="4" Padding="10" Margin="6">

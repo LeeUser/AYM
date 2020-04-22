@@ -60,17 +60,20 @@
     </ApplicationDefinition>
     <Compile Include="Model\DMCode.cs" />
     <Compile Include="ViewModel\AduDesignViewModel.cs" />
-    <Compile Include="Views\aymlogo.xaml.cs">
-      <DependentUpon>aymlogo.xaml</DependentUpon>
+    <Compile Include="Views\Aymlogo.xaml.cs">
+      <DependentUpon>Aymlogo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BagInfoControl.xaml.cs">
       <DependentUpon>BagInfoControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\RunningInfoControl.xaml.cs">
+      <DependentUpon>RunningInfoControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\OutputControl.xaml.cs">
       <DependentUpon>OutputControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Entry1Control.xaml.cs">
-      <DependentUpon>Entry1Control.xaml</DependentUpon>
+    <Compile Include="Views\EntryOneControl.xaml.cs">
+      <DependentUpon>EntryOneControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\StatisticsControl.xaml.cs">
       <DependentUpon>StatisticsControl.xaml</DependentUpon>
@@ -91,7 +94,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\aymlogo.xaml">
+    <Page Include="Views\Aymlogo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -99,11 +102,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\RunningInfoControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\OutputControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Entry1Control.xaml">
+    <Page Include="Views\EntryOneControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -153,23 +160,28 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Views\Output.jpg" />
+    <Resource Include="Resources\About.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="64.ico" />
+    <Resource Include="Resources\64.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Leftback.jpg" />
-    <Resource Include="Views\Exits.png" />
-    <Resource Include="Views\Entry1.png" />
+    <Resource Include="Resources\Background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="About.png" />
-    <Resource Include="Exit.png" />
-    <Resource Include="Moniter.png" />
+    <Resource Include="Resources\Exit.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Background.jpg" />
+    <Resource Include="Resources\Leftback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Moniter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Images\EntryOne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Images\Exits.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,13 +13,13 @@
     ResizeMode="CanResizeWithGrip"
     SystemButtonSize="40"
     FitSystemWindow="True"
-    Icon="64.ico"
+    Icon="Resources\64.ico"
     Height="450"
     MinHeight="450"
     Style="{DynamicResource AduWindowStyle}"
-    mc:Ignorable="d" Loaded="DMSkinWindow_Loaded">
+    mc:Ignorable="d">
     <dmskin:DMSkinWindow.Background>
-        <ImageBrush ImageSource="Background.jpg" Opacity="0.7"/>
+        <ImageBrush ImageSource="Resources\Background.jpg" Opacity="0.7"/>
     </dmskin:DMSkinWindow.Background>
     
     <Border CornerRadius="4" Name="mainback">
@@ -31,21 +31,24 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="215"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
             <!--logo位置-->
             <Border Grid.Column="0" Grid.Row="0"  BorderThickness="0,0,1,0" Background="#E7E8E9">
-                <myView:aymlogo Width="160" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <myView:Aymlogo Width="160" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"></myView:Aymlogo>
             </Border>
             
             <!--菜单-->
-            <Border Grid.Column="0" Grid.Row="1"  BorderThickness="0,0,1,0" Background="#E7E8E9">
+            <Border Grid.Column="0" Grid.Row="1" 
+                    Grid.RowSpan="2" 
+                    BorderThickness="0,0,1,0" 
+                    Background="#E7E8E9">
                 <ScrollViewer Style="{StaticResource DMScrollViewer}" Margin="0,20">
                     <StackPanel
                         Background="#E7E8E9"
                         >
-
                         <!--<StackPanel.Background>
                             <ImageBrush ImageSource="Leftback.jpg" Opacity="0.3"/>
                         </StackPanel.Background>-->
@@ -59,45 +62,52 @@
                                 
                             <Expander.Header>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="Moniter.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
+                                    <Image Source="Resources\Moniter.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
                                     <TextBlock FontSize="16" Text="监控信息"></TextBlock>
                                 </StackPanel>
                             </Expander.Header>
 
                             <StackPanel>
                                 <RadioButton
+                                    x:Name="BtnEntryOne"
                                     Style="{StaticResource AduRadioButtonMenu}"
                                     Content="入口一"
                                     GroupName="Menu"
                                     FontSize="14"
-                                    IsChecked="False" />
+                                    IsChecked="False" 
+                                    Click="BtnEntryOne_Click"/>
                                 <RadioButton
+                                    x:Name="BtnEntryTwo"
                                     Style="{StaticResource AduRadioButtonMenu}"
                                     Content="入口二"
                                     GroupName="Menu"
                                     FontSize="14"
-                                    IsChecked="False" />
+                                    IsChecked="False"
+                                    Click="BtnEntryTwo_Click"/>
                                 <RadioButton
+                                    x:Name="BtnEntryThree"
                                     Style="{StaticResource AduRadioButtonMenu}"
                                     Content="入口三"
                                     GroupName="Menu"
-                                   
                                     FontSize="14"
-                                    IsChecked="False" />
+                                    IsChecked="False"
+                                    Click="BtnEntryThree_Click"/>
                                 <RadioButton
+                                    x:Name="BtnTransfer"
                                     Style="{StaticResource AduRadioButtonMenu}"
                                     Content="运输带"
                                     GroupName="Menu"
-                                   
                                     FontSize="14"
-                                    IsChecked="False" />
+                                    IsChecked="False"
+                                    Click="BtnTransfer_Click"/>
                                 <RadioButton
+                                    x:Name="BtnExist"
                                     Style="{StaticResource AduRadioButtonMenu}"
                                     Content="出口"
                                     GroupName="Menu"
-                                   
                                     FontSize="14"
-                                    IsChecked="False" />
+                                    IsChecked="False"
+                                    Click="BtnExist_Click"/>
                             </StackPanel>
                             
                         </Expander>
@@ -111,7 +121,7 @@
 
                             <Expander.Header>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="About.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
+                                    <Image Source="Resources\About.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
                                     <TextBlock FontSize="16" Text="关于帮助"></TextBlock>
                                 </StackPanel>
                             </Expander.Header>
@@ -143,7 +153,7 @@
 
                             <Expander.Header>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="Exit.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
+                                    <Image Source="Resources\Exit.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
                                     <TextBlock FontSize="16" Text="退出系统"></TextBlock>
                                 </StackPanel>
                             </Expander.Header>
@@ -151,11 +161,13 @@
                             <StackPanel>
 
                                     <RadioButton
+                                        x:Name="BtnExitApp"
                                             Style="{StaticResource AduRadioButtonMenu}"
                                             Content="退  出"
                                             GroupName="Menu"
                                             FontSize="14"
-                                            IsChecked="False" />
+                                            IsChecked="False"
+                                            Click="BtnExitApp_Click"/>
 
                                 </StackPanel>
 
@@ -164,24 +176,27 @@
                     </StackPanel>
                 </ScrollViewer>
             </Border>
-            
-            <!--具体内容-->
-            <Border Grid.Column="1" Grid.Row="1" >
-                <myView:Entry1Control></myView:Entry1Control>
-            </Border>
-            
-            <!--中间头部-->
-            <Border Grid.Column="1" Grid.Row="0" Background="#00465B" Opacity="0.9">
-                
-            </Border>
 
-            <!--右上角-->
-            <Border Grid.Column="2" Grid.Row="0" Background="#00465B" Opacity="0.9">
-
+            <!--运行统计-->
+            <Border Grid.Column="1" Grid.Row="0" 
+                    Grid.RowSpan="2" 
+                    Padding="0,25,0,0" 
+                    Background="#00465B" 
+                    Opacity="0.9">
+                <myView:RunningInfoControl></myView:RunningInfoControl>
             </Border>
 
-            <!--连接信息-->
-            <Border Grid.Column="2" Grid.Row="1" BorderBrush="#2B2833" BorderThickness="0,0,1,0">
+            <!--区域图-->
+            <Border Grid.Column="1" Grid.Row="2" Name="mainView">
+                <myView:EntryOneControl></myView:EntryOneControl>
+            </Border>
+
+            <!--统计信息-->
+            <Border Grid.Column="2" Grid.Row="0" 
+                    Background="#00465B" 
+                    Opacity="0.9"
+                    Grid.RowSpan="3"
+                    Padding="0,25,0,0">
                 <myView:StatisticsControl></myView:StatisticsControl>
             </Border>
 
